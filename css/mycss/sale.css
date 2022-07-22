@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+    /* All-header */
+    .all-header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    /* end all header */
+    /* Header-slide */
+    .header-slide{
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+        .header-slide .header-background{
+            width: 100%;
+            height: 500px;
+            background-color: rgba(0, 72, 108, .9);
+            position: relative;
+        }
+
+        .header-slide .header-background p{
+            color: white;
+            font-size: 32px;
+            font-family: 'Playfair Display', serif;
+            position: absolute;
+            top: 50%;
+            left: 43%;
+        }
+    /* end header-slide  */
+    /* header-menu */
+        
+        .all-header .header-menu{ 
+            background-color: rgba(57, 111, 138, 0.5);
+        }
+
+    /* end header-menu */
+
+    /* Link-hotel */
+    .link-hotel{
+        background-color: rgb(0, 114, 189);
+        padding: 5px;
+    }
+    .link-hotel a{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .link-hotel a:hover{
+        text-decoration: underline white;
+    }
+    .link-hotel_all div{
+        float: left;
+    }
+    .link-hotel_all .use-interface{
+        margin-left: 72%;
+    }
+    .link-hotel_all .use-interface .use-interface_link{
+        border: 1px solid black;
+        background-color: rgb(218, 218, 70);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    /* end link-hotel */
+    /*=== Header-icon ===*/
+    .header{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    /* Header-icon > sticky menu */
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(0, 72, 108);
+        transition: all 1s;
+        transition-duration: 1s;
+        z-index: 11111;
+      }
+      .sticky + .star-icon i{
+          padding-top: 1000px;
+      }
+      /* Header-icon > end sticky menu */
+
+        /* Header-icon > header-icon */
+        .header .header-icon{
+            margin-top: 5%;
+        }
+        .header .header-icon a{
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .header .header-icon a:hover{
+            text-shadow: 0 0 10px white;
+        }
+        /* Header-icon > header-menu1 */
+        .header .navbar .navbar-nav li{
+            margin-right: 20px;
+        }
+        .header li a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+        .header li a:hover{
+            text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+        }
+        /* Header-icon > header-logo */
+        
+        .header .logo img{
+            max-width: 100%;
+            height: auto;
+            margin-top: 10%;
+        }
+        /* lớp được add */
+        .div-logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border: 1px solid black;
+            margin-left: 25%;
+            background-color: rgb(0, 72, 108);
+            box-shadow: 0 0 5px #f3db81, 0 0 5px #f3db81;
+        }
+        .link-img{
+            width: auto;
+            height: auto;
+            margin-left: 0;
+
+        }
+
+        /* Header-icon > header-hotline */
+        .header .header-hotline{
+            margin-left: 60%;
+            margin-top: 5%;
+        }
+        .header .header-hotline .phone-number{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        .header .header-hotline a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .header-hotline a img{
+            width: 25px;
+            height: 15px;
+        }
+        .header .header-hotline a:hover{
+            text-decoration: underline;
+        }
+        .header nav{
+            margin-top: 3%;
+        }
+        /* end header-hotline */
+        /* Header-icon >  introduce*/
+        .header-menu .star-icon{
+            margin-top: 8%;
+            color: white;
+        }
+        .header-menu .header-hotelintro .intro-item{
+            color: white;
+            font-size: 48px;
+            font-family: 'Playfair Display', serif;
+
+        }
+        .header-menu .header-hotelintro a{
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color:white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        .header-menu .header-hotelintro a:hover{
+            background-color: white;
+            color: black;
+        }
+        /* end introduce */
+
+        .dropdown-menu .dropdown-item{
+            color: black;
+        }
+            /* mobile menu */
+            .mobile-menu{
+               display: none;
+            }
+/* END HEADER */
+
+
+
+/* MAIN */
+.all-sale{
+    margin-top: -10%;
+}
+.all-sale a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.all-sale a:hover{
+    color: black;
+}
+.all-sale a:hover .all_sale-content{
+    transition: 1s;
+    transform: translateY(30px);
+}
+.all_sale-content{
+    background-color: rgb(238, 238, 238);
+    transition-duration: 1s;
+
+}
+.all-sale a img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.all-sale a .sale{
+    background-color: rgb(238, 238, 238);
+    position: relative;
+    top: 0;
+    left: 0;
+    /* padding-bottom: 20px; */
+}
+    .all_sale-content .sale-date{
+        width: 60px;
+        height: 60px;
+        border: 1px solid black;
+        text-align: center;
+        padding-top: 5px;
+        background-color: rgb(0, 43, 143);
+        border-radius: 50px;
+        position: absolute;
+        left: 44%;
+        margin-top: -10%;
+        
+    }
+    .all_sale-content .sale-date p{
+        line-height: 1;
+        font-size: 12px;
+        color: white;
+    }
+        .all_sale-content .sale-date p span{
+            font-size: 22px;
+        }
+        .all_sale-content .sale-content{
+            font-size: 18px;
+            padding-top: 35px;
+            padding-left: 20px;
+            padding-bottom: 35px;
+        }
+
+    /* sale detail */
+    .sale-detail{
+        width: 100%;
+        background-color: rgb(238, 238, 238);
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    .sale-detail .check-room{
+        background-color: rgb(0, 72, 108);
+        height: 325px;
+    }
+    .check-room{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+        /* search */
+        .sale-detail .search{
+            width: 100%;
+            height: 40px;
+        }
+        .sale-detail .search-btn{
+            border: 1px solid rgb(0, 72, 108);
+            background-color: rgb(0, 72, 108);
+            color: white;
+            padding: 2px 5px;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+        /* check room */
+        .check-room{
+            text-align: center;
+        }
+        .check-room .test-room{
+            padding-top: 10px;
+            /* padding-left: 50px; */
+            font-size: 18px;
+        }
+            /* ngày đến */
+            .date-come{
+                position: absolute;
+                left: 20px;
+            }
+            .date-come p{
+                font-size: 14px;
+                padding-left: 10px;
+            }
+            .date-come input{
+                position: absolute;
+                top: 30px;
+                left: 0;
+                z-index: 1;
+                margin-left: 10px;
+                width: 100%;
+                height: 145px;
+                background-color: transparent;
+                border: none;
+            }
+                .date-come .date-come__detail{
+                    width: 100%;
+                    font-family: 'Playfair Display', serif;
+                    position: absolute;
+                    top: 0;
+                    left: 10px;
+                }
+                    .date-come__detail .day{
+                        
+                        font-size: 84px;
+                        line-height: 1;
+                    }
+                    .date-come__detail .month{
+                        font-size: 21px;
+                    }
+
+            /* ngày đi */
+            .date-back{
+                position: absolute;
+                right: 50px;
+            }
+            .date-back p{
+                font-size: 14px;
+                padding-left: 10px;
+            }
+            .date-back input{
+                position: absolute;
+                top: 30px;
+                left: 0;
+                z-index: 1;
+                margin-left: 10px;
+                width: 100%;
+                height: 145px;
+                background-color: transparent;
+                border: none;
+            }
+                .date-back .date-back__detail{
+                    font-family: 'Playfair Display', serif;
+                    position: absolute;
+                    top: 0;
+                    left: 10px;
+                }
+                .date-back__detail .day{
+                    
+                    font-size: 84px;
+                    line-height: 1;
+                }
+                .date-back__detail .month{
+                    font-size: 21px;
+                }
+    /* end date */
+    
+    .check-room .order-room{
+        position: absolute;
+        top: 310px;
+        left: 19%;
+    }
+        .order-room a{
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 20px 50px;
+        }
+        .order-room a:hover{
+            background-color: white;
+        }
+    /* list-blog */
+    .list-blog{
+        margin-top: 25px;
+        margin-left: 10px;
+        border-bottom: 1px solid black;
+    }
+        .list-blog p{
+            font-size: 18px;
+        }
+        .list-blog ul a{
+            font-size: 12px;
+        }
+        .list-blog ul a:hover{
+            font-size: 18px;
+        }
+    /* post */
+    .post{
+        margin-top: 25px;
+        margin-left: 10px;
+        border-bottom: 1px solid black;
+        padding-bottom: 20px;
+    }
+    .post p{
+        font-size: 18px;
+
+    }
+    .post a{
+        font-size: 12px;
+    }
+/* END MAIN */
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+    .footer{
+        /* margin-top: 10%; */
+    }
+        /* footer end */
+        .footer-end{
+            background-color: rgb(0, 38, 57);
+            margin-top: 5%;
+            padding-bottom: 30px;
+        }
+        .footer-end a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        .footer-end a:hover{
+            color: white;
+            text-decoration: underline white;
+        }
+        .footer-end span{
+            border-right: 1px solid white;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .footer-end .security{
+            margin-top: 15%;
+        }
+        .footer-end .pay{
+            margin-top: 15%;
+        }
+        .footer-end .footer-end__icon{
+            text-align: center;
+            margin-bottom: 10%;
+        }
+        .footer-end .footer-end__icon a{
+            margin-right: 5%;
+        }
+        .footer-end .reference{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            margin-left: 3%;
+            font-size: 13px;
+        }
+        .footer-end .reference a{
+            font-size: 11px;
+        }
+/* END FOOTER */

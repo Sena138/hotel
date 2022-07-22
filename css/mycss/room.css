@@ -1,0 +1,939 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    .link-hotel .link-hotel_all .use-interface {
+        margin-left: 55%;
+    }
+    .header .container .header-hotline {
+        margin-left: 42%;
+        margin-top: 5%;
+    }
+    .header .container .header-hotline .phone-number {
+        font-size: 12px;
+    }
+    /* header introduce */
+    .header-slide .header-background div p{
+        left: 16%;
+    }
+    /* menu */
+    .header .logo a img{
+        margin-left: 0;
+        margin-top: 16%;
+    }
+    .header .navbar .menu-right{
+        display: none;
+    }
+    .header .navbar .menu-left{
+        display: none;
+    }
+        /* mobile menu */
+    .header .mobile-menu {
+        display: block;
+        margin-top: -7%;
+    }
+    .sticky .mobile-menu{
+        margin-top: -12%;
+    }
+    .header .mobile-menu button{
+        background-color: rgb(238, 238, 238);
+    }
+        /* class được add */
+        .header .div-logo{
+            margin-left: 0;
+        }
+        .header .div-logo img{
+            margin-top: 5%;
+        }
+    /* main */
+    .main .container-room .all-content{
+        margin-top: 0;
+    }
+    .main .all-content .title{
+        margin-top: 0;
+    }
+    .main .container-room .room-img{
+        margin-top: 22%;
+    }
+    /* cheap room */
+    .cheap .room-deluxe .room-detail .room-link .room-name {
+        font-size: 20px;
+    }
+    .room-deluxe .room-detail .room-price p{
+        font-size: 20px;
+    }
+    /* expen room */
+    .expensive .suite-room .room-detail .room-link .room-name{
+        font-size: 20px;
+    }
+    .suite-room .room-detail .room-price p{
+        font-size: 16px;
+    }
+    .suite-room .room-detail .room-price p br{
+        display: none;
+    }
+    .suite-room .room-detail .room-price{
+        top: 75%;
+        left: 2%;
+    }
+    /* restaurant */
+    .restaurent .container .res-intro .res-findmore{
+        margin-left: 9%;
+    }
+    
+        /* gần đây */
+        .all-visit .container .food .food-background a{
+            left: 40%;
+        }
+        .all-visit .container .point-to .point-to_background a{
+            left: 30%;
+        }
+        .all-visit .container .point-to .point-to_background a{
+            left: 30%;
+        }
+        .all-visit .container .experience .experience-background a{
+            left: 23%;
+        }
+        .all-visit .container .game .game-background a{
+            left: 20%;
+        }
+
+        
+    /* footer */
+    .footer .container .all-detailfooter {
+        margin-top: -30%;
+    }
+    .footer .all-detailfooter .detail{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .link-hotel .link-hotel_all .use-interface{
+        margin-left: 48%;
+    }
+    .all-header .link-hotel a{
+        font-size: 10px;
+    }
+    
+    .header .container .logo img {
+        margin-left: 35%;
+        margin-top: -20%;
+        width: 100px;
+    }
+    .header .div-logo {
+        margin-left: 40%;
+        margin-top: -15%;
+    }
+    .header .container .div-logo img{
+        margin-left: 0;
+        margin-top: 20%;
+    }
+    .header .container .header-hotline {
+        margin-left: 75%;
+        margin-top: -21%;
+    }
+    .header .container .header-hotline .phone-number{
+        font-size: 12px;
+    }
+    .header .header-hotline a img{
+        display: none;
+    }
+    .header-slide .header-background div p {
+        left: 7%;
+        font-size: 24px;
+    }
+    /* main */
+    .main .container-room .room-img {
+        margin-top: 2%;
+    }
+    .all-visit .container .food .food-background a{
+        left: 41%;
+    }
+    .all-visit .container .point-to .point-to_background a{
+        left: 41%;
+    }
+    .all-visit .container .experience .experience-background a{
+        left: 37%;
+    }
+    .all-visit .container .game .game-background a{
+        left: 37%;
+    }
+    .all-visit .container .festival .festival-background a{
+        left: 43%;
+    }
+    .restaurent .res-list{
+        margin-left: -7%;
+    }
+    .restaurent .res-list .res-findmore_item a i{
+        padding-top: 82px;
+        padding-left: 0;
+    }
+    /* footer */
+    .footer .footer-end .security{
+        text-align: center;
+        margin-top: 5%;
+    }
+    .footer .footer-end .pay {
+        margin-top: 4%;
+        text-align: center;
+    }
+    .footer .footer-end .footer-end__icon {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 320px){
+    .header .container .header-hotline .phone-number {
+        display: none;
+    }
+    .header .container .div-logo {
+        margin-left: 35%;
+        margin-top: -25%;
+    }
+    .header-slide .header-background div p {
+        left: 3%;
+        font-size: 16px;
+        top: 55%;
+    }
+    .link-hotel .link-hotel_all .use-interface{
+        margin-left: 20%;
+    }
+    .header .container .logo img {
+        margin-left: 32%;
+        margin-top: -38%;
+    }
+    .header .container .div-logo img {
+        margin-left: 0;
+        margin-top: 20%;
+    }
+}
+/* HEADER */
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+    /* All-header */
+    .all-header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    /* end all header */
+    /* Header-slide */
+    .header-slide{
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+        .header-slide .header-background{
+            width: 100%;
+            height: 500px;
+            background-color: rgba(0, 72, 108, .9);
+            position: relative;
+        }
+
+        .header-slide .header-background p{
+            color: white;
+            font-size: 32px;
+            font-family: 'Playfair Display', serif;
+            position: absolute;
+            top: 44%;
+            left: 32%;
+        }
+    /* end header-slide  */
+    /* header-menu */
+        
+        .all-header .header-menu{ 
+            background-color: rgba(57, 111, 138, 0.5);
+        }
+
+    /* end header-menu */
+
+    /* Link-hotel */
+    .link-hotel{
+        background-color: rgb(0, 114, 189);
+        padding: 5px;
+    }
+    .link-hotel a{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .link-hotel a:hover{
+        text-decoration: underline white;
+    }
+    .link-hotel_all div{
+        float: left;
+    }
+    .link-hotel_all .use-interface{
+        margin-left: 72%;
+    }
+    .link-hotel_all .use-interface .use-interface_link{
+        border: 1px solid black;
+        background-color: rgb(248, 194, 24);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    /* end link-hotel */
+    /*=== Header-icon ===*/
+    .header{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    /* Header-icon > sticky menu */
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(0, 72, 108);
+        transition: all 1s;
+        transition-duration: 1s;
+        z-index: 11111;
+      }
+      .sticky + .star-icon i{
+          padding-top: 1000px;
+      }
+      /* Header-icon > end sticky menu */
+
+        /* Header-icon > header-icon */
+        .header .header-icon{
+            margin-top: 5%;
+        }
+        .header .header-icon a{
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .header .header-icon a:hover{
+            text-shadow: 0 0 10px white;
+        }
+        /* Header-icon > header-menu1 */
+        .header .navbar .navbar-nav li{
+            margin-right: 20px;
+        }
+        .dropdown-menu .dropdown-item{
+            color: black;
+        }
+        .mobile-menu{
+            display: none;
+         }
+        .header li a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+        .header li a:hover{
+            text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+        }
+        /* Header-icon > header-logo */
+        
+        .header .logo img{
+            width: 100%;
+            height: auto;
+            margin-left: 10%;
+        }
+            /* class add them */
+            .div-logo{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                border: 1px solid black;
+                margin-left: 25%;
+                background-color: rgb(0, 72, 108);
+                box-shadow: 0 0 5px #f3db81, 0 0 5px #f3db81;
+            }
+            .link-img{
+                width: auto;
+                height: auto;
+                margin-left: 0;
+            }
+        /* Header-icon > header-hotline */
+        .header .header-hotline{
+            margin-left: 60%;
+            margin-top: 5%;
+        }
+        .header .header-hotline .phone-number{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        .header .header-hotline a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .header-hotline a img{
+            width: 25px;
+            height: 15px;
+        }
+        .header .header-hotline a:hover{
+            text-decoration: underline;
+        }
+        .header nav{
+            margin-top: 3%;
+        }
+        /* end header-hotline */
+        /* Header-icon >  introduce*/
+        .header-menu .star-icon{
+            margin-top: 8%;
+            color: white;
+        }
+        .header-menu .header-hotelintro .intro-item{
+            color: white;
+            font-size: 48px;
+            font-family: 'Playfair Display', serif;
+
+        }
+        .header-menu .header-hotelintro a{
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color:white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        .header-menu .header-hotelintro a:hover{
+            background-color: white;
+            color: black;
+        }
+        /* end introduce */
+/* END HEADER */
+
+/* MAIN */
+    /* ROOM */
+    .all-room{
+        margin-top: -10%;
+        position: relative;
+        z-index: 1;
+        padding-bottom: 4%;
+        border-bottom: .1px solid lightblue;
+    }
+    .main .all-room .cheap{
+        margin-bottom: 2%;
+    }
+    /* PHÒNG RẺ */
+        .main .cheap img{
+            width: 100%;
+            height: auto;
+        }
+        .all-room .room-deluxe{
+            border: 1px solid rgb(238, 238, 238);
+            background-color: rgb(238, 238, 238);
+        }
+        .all-room .room-deluxe .room-detail{
+            overflow: auto;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            margin-left: 4%;
+            position: relative;
+        }
+        .all-room .room-deluxe .room-detail{
+            width: 100%;
+            height: 100px;
+            position: relative;
+        }
+        .all-room .room-deluxe .room-detail div{
+            float: left;
+        }
+        /* tên phòng  và đặt phòng */
+        .room-deluxe .room-detail .room-link a{
+            text-decoration: none;
+        }
+        .room-deluxe .room-detail .room-link .room-name{
+            color: rgb(234, 199, 110);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            display: block;
+            margin-bottom: 5%;
+        }
+        .room-deluxe .room-detail .room-link .room-order{
+            border: 1px solid rgb(238, 238, 238);
+            color: white;
+            background-color: rgb(0, 72, 108);
+            padding: 10px 20px;
+        }
+        .room-deluxe .room-detail .room-link .room-order:hover{
+            opacity: .8;
+        }
+        /* giá phòng */
+        .room-detail .room-price{
+            position: absolute;
+            top: 40%;
+            left: 60%;
+        }
+        .room-detail .room-price p{
+            font-size: 24px;
+            font-family: 'Montserrat', sans-serif;
+            line-height: .8;
+
+        }
+        .room-detail .room-price p span{
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    /* Phòng đắt */
+    .main .expensive img{
+        width: 100%;
+        height: auto;
+    }
+    .all-room .suite-room{
+        border: 1px solid rgb(238, 238, 238);
+        background-color: rgb(238, 238, 238);
+    }
+    .all-room .suite-room .room-detail{
+        overflow: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 4%;
+        position: relative;
+    }
+    .all-room .suite-room .room-detail{
+        width: 100%;
+        height: 100px;
+        position: relative;
+    }
+    .all-room .suite-room .room-detail div{
+        float: left;
+    }
+    /* tên phòng  và đặt phòng */
+    .suite-room .room-detail .room-link a{
+        text-decoration: none;
+    }
+    .suite-room .room-detail .room-link .room-name{
+        color: rgb(234, 199, 110);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 28px;
+        display: block;
+        margin-bottom: 5%;
+    }
+    .suite-room .room-detail .room-link .room-order{
+        border: 1px solid rgb(238, 238, 238);
+        color: white;
+        background-color: rgb(0, 72, 108);
+        padding: 10px 20px;
+    }
+    .suite-room .room-detail .room-link .room-order:hover{
+        opacity: .8;
+    }
+    /* giá phòng */
+    .room-detail .room-price{
+        position: absolute;
+        top: 40%;
+        left: 60%;
+    }
+    .room-detail .room-price p{
+        font-size: 24px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: .8;
+
+    }
+    .room-detail .room-price p span{
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /*== RESTAURANT ==*/
+        /* restaurant content */
+        .restaurent{margin-top: 7%;}
+        .restaurent .res-intro div{
+            float: left;
+        }
+        .restaurent .res-intro .res-intro_title{
+            font-size: 34px;
+            font-family: 'Playfair Display', serif;
+            line-height: .5;
+        }
+        .restaurent .res-intro .res-intro_title span{
+            color: rgb(249, 194, 24);
+        }
+        .restaurent .res-intro .res-intro_content{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        /* link khám phá nhà hàng */
+        .restaurent .res-intro .res-findmore{
+            margin-left: 51%;
+        }
+        .restaurent .res-intro .res-findmore a{
+            border: 1px solid black;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 5px;
+        }
+        
+        /* danh sách nhà hàng */
+    .res-list{
+        margin-top: 2%;
+        margin-left: -4.2%;
+        position: relative;
+    }
+    .res-list .res-item{
+        float: left;
+        width: 23%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        list-style: none;
+    }
+    .res-list .res-item{
+        transition: all 1s;
+        transition-duration: 1s;
+    }
+    .res-list .res-item a{
+        text-decoration: none;
+        color: white;
+    }
+    .res-list .res-item .item-background{
+        background-color: rgba(0, 72, 108, .8);
+        width: 100%;
+        height: 100%;
+    }
+    .res-list .res-item .item-background .res-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        padding-top: 65%;
+    }
+    .res-list .res-item .item-background .res-content{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        display: none;
+    }
+    .res-list .res-item.res-active{
+        width: 38%;
+
+      }
+    .res-list .res-item.res-inactive{
+        width: 13%;
+      }
+    .res-list .res-item.res-active .res-content{
+        display: block;
+    }
+
+    /* find-more */
+    .res-list .res-findmore_item a{
+        text-decoration: none;
+        color: white;
+    }
+    .res-list .res-findmore_item a i{
+        font-size: 30px;
+        /* margin-top: 50%; */
+        padding-top: 15%;
+        padding-left: 3%;
+    }
+    .res-list .res-findmore_item{
+        height: 500px;
+        width: 100%;
+        background-color: rgb(0, 38, 57);
+        list-style: none;
+    }
+
+    .res-list .res-findmore_item p{
+        font-family: 'Montserrat', sans-serif;
+        /* font-size: 24px; */
+        display: none;
+    }
+    .res-list .res-findmore_item.res-inactive p{
+        display: none;
+    }
+    /* END RESTAURANT */
+    /* GẦN ĐÂY */
+    /* Near content */
+    .all-visit{
+        margin-top: 7%;
+    }
+     .all-visit .vistit1{
+         margin-top: 3%;
+     }
+     .all-visit .vistit2{
+         margin-top: 2%;
+     }
+
+
+    .all-visit .near .near-title{
+        font-family: 'Playfair Display', serif;
+        font-size: 34px;
+        line-height: 1;
+    }
+    .all-visit .near .near-title span{
+        color: rgb(249, 194, 24);
+    }
+    .all-visit .near .near-content{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 0;
+    }
+    /* Near detail */
+    .all-visit .food{
+        width: 100%;
+        height: 360px;
+        position: relative;
+    }
+    .all-visit .food .food-background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .food .food-background:hover{
+        background-color: rgba(0, 72, 108, .8);
+    }
+    .all-visit .food .food-background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 40%;        
+    }
+    .all-visit .food .food-background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 45%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+
+    }
+    /* Point to */
+    .all-visit .point-to{
+        width: 100%;
+        height: 360px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .all-visit .point-to .point-to_background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .point-to .point-to_background:hover{
+        background-color: rgba(0, 72, 108, .8);
+    }
+    .all-visit .point-to .point-to_background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 45%;        
+    }
+    .all-visit .point-to .point-to_background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 40%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+
+    }
+    /* Game */
+    .all-visit .game{
+        width: 100%;
+        height: 360px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .all-visit .game .game-background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .game .game-background:hover{
+        background-color: rgba(0, 72, 108, .8);
+    }
+    .all-visit .game .game-background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 45%;        
+    }
+    .all-visit .game .game-background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 36%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+
+    }
+    /* Experiance */
+    .all-visit .experience{
+        width: 100%;
+        height: 360px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .all-visit .experience .experience-background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .experience .experience-background:hover{
+        background-color: rgba(0, 72, 108, .8);
+    }
+    .all-visit .experience .experience-background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 45%;        
+    }
+    .all-visit .experience .experience-background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 36%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+    }
+    /* Festival */
+    .all-visit .festival{
+        width: 100%;
+        height: 360px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .all-visit .festival .festival-background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .festival .festival-background:hover{
+        background-color: rgba(0, 72, 108, .8);
+    }
+    .all-visit .festival .festival-background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 45%;        
+    }
+    .all-visit .festival .festival-background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 42%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+    }
+    /* END GẦN ĐÂY */
+    /* FOOTER */
+    .footer .img-footer{
+        width: 100%;
+        height: 402px;
+        margin-top: 10%;
+    }
+    .footer .all-detailfooter div{
+        float:left;
+    }
+    .footer .all-detailfooter{
+        background-color: rgb(238, 238, 238);
+        margin-top: -15%;
+    }
+    /* footer map */
+    .footer .map{
+        width: 50%;
+        height: 500px;
+    }
+    .footer .map iframe{
+        width: 100%;
+    }
+    /* footer detail */
+    .footer .detail{
+        width: 50%;
+        height: 450px;
+        background-color: rgb(238, 238, 238);
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 73px;
+    }
+    .footer .detail strong{
+        font-family: 'Playfair Display', serif;
+        font-weight: 300;
+        font-size: 35px;
+    }
+    .footer .detail p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: small;
+    }
+    .footer .detail .icon-footer{
+        width: 100%;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .footer .detail .icon-footer div{
+        margin-left: 30%;
+    }
+    .footer .detail a{
+        padding: 100px 15px;
+        width: 35px;
+        height: 35px;
+        color: black;
+    }
+    /* footer end */
+    .footer-end{
+        background-color: rgb(0, 38, 57);
+        margin-top: 5%;
+        padding-bottom: 30px;
+    }
+    .footer-end a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    .footer-end a:hover{
+        color: white;
+        text-decoration: underline white;
+    }
+    .footer-end span{
+        border-right: 1px solid white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer-end .security{
+        margin-top: 15%;
+    }
+    .footer-end .pay{
+        margin-top: 15%;
+    }
+    .footer-end .footer-end__icon{
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .footer-end .footer-end__icon a{
+        margin-right: 5%;
+    }
+    .footer-end p{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: small;
+        margin-left: 3%;
+    }

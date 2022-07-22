@@ -1,0 +1,37 @@
+/* @media only screen and (min-width: 768px) {
+    .link-hotel_all .use-interface {
+        margin-left: 55%;
+    }
+    .header .header-hotline {
+        margin-left: 42%;
+        margin-top: 5%;
+    }
+    .header .header-hotline .phone-number {
+        font-size: 12px;
+    }
+    .header .navbar .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+    .header nav li a{
+        font-size: 12px;
+    }
+
+} 
+  @media only screen and (min-width: 1200px) {
+    .link-hotel_all .use-interface {
+        margin-left: 76%;
+    }
+    .header .header-hotline {
+        margin-left: 66%;
+        margin-top: 5%;
+    }
+    
+    .header nav li a{
+        font-size: 14px;
+    }
+
+  } */

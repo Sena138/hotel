@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+    .link-hotel .link-hotel_all .use-interface {
+        margin-left: 55%;
+    }
+    .header .container .header-hotline {
+        margin-left: 42%;
+        margin-top: 5%;
+    }
+    .header .container .header-hotline .phone-number {
+        font-size: 12px;
+    }
+    /* header introduce */
+    .header-slide .header-background div p{
+        left: 12%;
+    }
+
+    /* menu */
+    .header .navbar .menu-right{
+        display: none;
+    }
+    .header .navbar .menu-left{
+        display: none;
+    }
+        /* mobile menu */
+
+    .header .mobile-menu {
+        display: block;
+        margin-top: -10%;
+        margin-left: -5%;
+    }
+    .header .mobile-menu button{
+        background-color: rgb(238, 238, 238);
+    }
+        /* class được add */
+        .header .div-logo{
+            margin-left: 0;
+        }
+    /* main */
+    .main .container-room .all-content{
+        margin-top: 0;
+    }
+    .main .all-content .title{
+        margin-top: 0;
+    }
+    .main .container-room .room-img{
+        margin-top: 22%;
+    }
+        /* gần đây */
+        .container-content .near-background a{
+            left: 23%;
+        }
+
+        .container-content .near-background .festival{
+            left: 30%;
+        }
+        .container-content .near-background .experience{
+            left: 17%;
+        }
+        .container-content .background a{
+            left: 33%;
+        }
+    /* footer */
+    .footer .container .all-detailfooter {
+        margin-top: -30%;
+    }
+    .footer .all-detailfooter .detail{
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .link-hotel .link-hotel_all .use-interface{
+        margin-left: 48%;
+    }
+    .all-header .link-hotel a{
+        font-size: 10px;
+    }
+    
+    .header .container .logo img {
+        margin-left: 35%;
+        margin-top: -20%;
+    }
+    .header .div-logo {
+        margin-left: 40%;
+        margin-top: -15%;
+    }
+    .header .container .div-logo img{
+        margin-left: 0;
+        margin-top: 20%;
+    }
+    .header .container .header-hotline {
+        margin-left: 75%;
+        margin-top: -21%;
+    }
+    .header .container .header-hotline .phone-number{
+        font-size: 12px;
+    }
+    .header .header-hotline a img{
+        display: none;
+    }
+    .header-slide .header-background div p {
+        left: 3%;
+        font-size: 24px;
+    }
+    /* main */
+    .main .container-room .room-img {
+        margin-top: 2%;
+    }
+    .container-content .near-background a {
+        left: 38%;
+    }
+    .container-content .near-background .experience {
+        left: 35%;
+    }
+    .container-content .near-background .festival {
+        left: 41%;
+    }
+    .container-content .near-background .sport{
+        left: 34%;
+    }
+
+    /* footer */
+    .footer .footer-end .security{
+        text-align: center;
+        margin-top: 5%;
+    }
+    .footer .footer-end .pay {
+        margin-top: 4%;
+        text-align: center;
+    }
+    .footer .footer-end .footer-end__icon {
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+}
+@media only screen and (max-width: 320px){
+    .header .container .header-hotline .phone-number {
+        display: none;
+    }
+    .header .container .div-logo {
+        margin-left: 35%;
+        margin-top: -25%;
+    }
+    .header-slide .header-background div p {
+        left: 3%;
+        font-size: 16px;
+        top: 55%;
+    }
+    .link-hotel .link-hotel_all .use-interface{
+        margin-left: 20%;
+    }
+    .header .container .logo img {
+        margin-left: 32%;
+        margin-top: -38%;
+    }
+    .header .container .div-logo img {
+        margin-left: 0;
+        margin-top: 20%;
+    }
+}
+/* HEADER */
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+    /* All-header */
+    .all-header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    /* end all header */
+    /* Header-slide */
+    .header-slide{
+        width: 100%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+        .header-slide .header-background{
+            width: 100%;
+            height: 500px;
+            background-color: rgba(0, 72, 108, .9);
+            position: relative;
+        }
+
+        .header-slide .header-background p{
+            color: white;
+            font-size: 32px;
+            font-family: 'Playfair Display', serif;
+            position: absolute;
+            top: 44%;
+            left: 30%;
+        }
+    /* end header-slide  */
+    /* header-menu */
+        
+        .all-header .header-menu{ 
+            background-color: rgba(57, 111, 138, 0.5);
+        }
+
+    /* end header-menu */
+
+    /* Link-hotel */
+    .link-hotel{
+        background-color: rgb(0, 114, 189);
+        padding: 5px;
+    }
+    .link-hotel a{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .link-hotel a:hover{
+        text-decoration: underline white;
+    }
+    .link-hotel_all div{
+        float: left;
+    }
+    .link-hotel_all .use-interface{
+        margin-left: 72%;
+    }
+    .link-hotel_all .use-interface .use-interface_link{
+        border: 1px solid black;
+        background-color: rgb(218, 218, 70);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    /* end link-hotel */
+    /*=== Header-icon ===*/
+    .header{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    /* Header-icon > sticky menu */
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(0, 72, 108);
+        transition: all 1s;
+        transition-duration: 1s;
+        z-index: 11111;
+      }
+      .sticky + .star-icon i{
+          padding-top: 1000px;
+      }
+      /* Header-icon > end sticky menu */
+
+        /* Header-icon > header-icon */
+        .header .header-icon{
+            margin-top: 5%;
+        }
+        .header .header-icon a{
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .header .header-icon a:hover{
+            text-shadow: 0 0 10px white;
+        }
+        /* Header-icon > header-menu1 */
+        .header .navbar .navbar-nav li{
+            margin-right: 20px;
+        }
+        .header li a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+        .header li a:hover{
+            text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+        }
+        /* Header-icon > header-logo */
+        
+        .header .logo img{
+            max-width: 100%;
+            height: auto;
+            margin-top: 10%;
+        }
+        /* lớp được add */
+        .div-logo{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border: 1px solid black;
+            margin-left: 25%;
+            background-color: rgb(0, 72, 108);
+            box-shadow: 0 0 5px #f3db81, 0 0 5px #f3db81;
+        }
+        .link-img{
+            width: auto;
+            height: auto;
+            margin-left: 0;
+
+        }
+
+        /* Header-icon > header-hotline */
+        .header .header-hotline{
+            margin-left: 60%;
+            margin-top: 5%;
+        }
+        .header .header-hotline .phone-number{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        .header .header-hotline a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .header-hotline a img{
+            width: 25px;
+            height: 15px;
+        }
+        .header .header-hotline a:hover{
+            text-decoration: underline;
+        }
+        .header nav{
+            margin-top: 3%;
+        }
+        /* end header-hotline */
+        /* Header-icon >  introduce*/
+        .header-menu .star-icon{
+            margin-top: 8%;
+            color: white;
+        }
+        .header-menu .header-hotelintro .intro-item{
+            color: white;
+            font-size: 48px;
+            font-family: 'Playfair Display', serif;
+
+        }
+        .header-menu .header-hotelintro a{
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color:white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            
+        }
+        .header-menu .header-hotelintro a:hover{
+            background-color: white;
+            color: black;
+        }
+        /* end introduce */
+
+        .dropdown-menu .dropdown-item{
+            color: black;
+        }
+            /* mobile menu */
+            .mobile-menu{
+               display: none;
+            }
+/* END HEADER */
+/* MAIN */
+    /* Main slider */
+.main .container-slider{
+    position: relative;
+    /* border: 0.5px solid black; */
+    margin-top: -10%;
+    background-color: white ;
+}
+    /* main title */
+    .main .title{
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        margin-top: 9%;
+        margin-bottom: 6%;
+    }
+    /* main slider content */
+    .main .slider-content{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    /* End main slider */
+    /* room */
+    .main .container-room{
+        margin-top: 5%;
+    }
+    .main .container-room{
+        background-color: rgb(238, 238, 238);
+    }
+    /* container room */
+    .container-room .room-img{
+        width: 100%;
+    }
+    .container-room .room-img img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .container-room .all-content{
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    .container-room .all-content .room-title{
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+    }
+    .container-room .all-content .room-content{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    /* container room */
+    .container-content{
+        margin-top: 5%;
+    }
+    .container-content .all-content{
+        margin-top: 5%;
+    }
+    .container-content .room-title{
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        margin-bottom: 5%;
+    }
+    .container-content .room-content{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    /* Gần đây */
+    .main .near-background{
+        width: 100%;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    .near-background div{
+        width: 100%;
+        height: 350px;
+    }
+    .near-background div:hover {
+        background-color: rgba(0, 114, 189, .5);
+    }
+    .near-background div:hover a{
+        top: 40%;
+        transition-duration: 1s;
+    }
+    .near-background a{
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 80%;
+        left: 33%;
+        transition: all 1s;
+        transition-duration: 1s;
+    }
+    .near-background a:hover{
+        color: black;
+        background-color: white;
+    }
+    /*  */
+    .background{
+        width: 100%;
+        height: 350px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .background div{
+        width: 100%;
+        height: 350px;
+    }
+    .background a{
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-decoration: none;
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        transition: all 1s;
+        transition-duration: 1s;
+    }
+    .background div:hover {
+        background-color: rgba(0, 114, 189, .5);
+    }
+    .background div:hover a{
+        top: 40%;
+        transition-duration: 1s;
+    }
+    /*  */
+    /* FOOTER */
+ /* FOOTER */
+ 
+.footer{
+    margin-top: 10%;
+}
+/* footer end */
+.footer-end{
+    background-color: rgb(0, 38, 57);
+    margin-top: 5%;
+    padding-bottom: 30px;
+}
+.footer-end a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.footer-end a:hover{
+    color: white;
+    text-decoration: underline white;
+}
+.footer-end span{
+    border-right: 1px solid white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-end .security{
+    margin-top: 15%;
+}
+.footer-end .pay{
+    margin-top: 15%;
+}
+.footer-end .footer-end__icon{
+    text-align: center;
+    margin-bottom: 10%;
+}
+.footer-end .footer-end__icon a{
+    margin-right: 5%;
+}
+.footer-end .reference{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 3%;
+    font-size: 13px;
+}
+.footer-end .reference a{
+    font-size: 11px;
+}

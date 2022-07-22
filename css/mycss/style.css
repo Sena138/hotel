@@ -1,0 +1,993 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Playfair+Display&family=Roboto+Mono:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    /* padding: 15px; */
+    /* border: 1px solid red; */
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 768px) {
+    .link-hotel .link-hotel_all .use-interface {
+        margin-left: 55%;
+    }
+    .header .container .header-hotline {
+        margin-left: 42%;
+        margin-top: 5%;
+    }
+    .header .container .header-hotline .phone-number {
+        font-size: 12px;
+    }
+    /* menu */
+
+    .header .navbar .menu-right{
+        display: none;
+    }
+    .header .navbar .menu-left{
+        display: none;
+    }
+        /* mobile menu */
+
+    .header .mobile-menu {
+        display: block;
+        margin-top: -10%;
+        margin-left: -5%;
+    }
+    .header .mobile-menu button{
+        background-color: rgb(238, 238, 238);
+    }
+        /* class được add */
+        .header .div-logo{
+            margin-left: 0;
+        }
+    /* date */
+    .all-date .container .apply-buton{
+        margin-left: 0;
+        margin-top: 20%;
+    }
+    .all-date .container .apply-buton .text-center a{
+        padding: 20px 20px;
+    }
+    /* room hotel */
+    .main .room-hotel .see-more{
+        margin-left: 30%;
+    }
+    /* feedback */
+    .feedback .feedback-intro_all .feedback-findmore{
+        margin-left: 23%;
+    }
+    /* restaurant */
+    .main .restaurent .res-intro .res-findmore {
+        margin-left: 10%;
+    }
+    .all-visit .vistit1 .point-to .point-to_background a{
+        left: 27%;
+    }
+    .all-visit .vistit2 .game .game-background a{
+        left: 19%;
+    }
+    .all-visit .vistit2 .experience .experience-background a{
+        left: 23%;
+    }
+    .all-visit .vistit2 .festival .festival-background a{
+        left: 35%;
+    }
+    /* footer */
+    .footer .container .all-detailfooter {
+        margin-top: -30%;
+    }
+    .footer .all-detailfooter .detail{
+        height: 100%;
+    }
+} 
+@media only screen and(max-width: 480px){
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER */
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+    /* All-header */
+    .all-header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    /* end all header */
+    /* Header-slide */
+    .header-slide .carousel-item{
+        width: 100%;
+        height: 760px;
+    }
+    .header-slide img{
+        /* width: 100%;
+        height: 760px; */
+        width: 100%;
+        height: 100%;
+    }
+    .header-slide button{
+        margin-top: 300px;
+        margin-left: 0;
+        height: 100px;
+    }
+    /* end header-slide  */
+    /* header-menu */
+        .all-header .header-menu{ 
+            background-color: rgba(7, 7, 7, 0.5);
+            height: 760px;
+        }
+    /* end header-menu */
+    /* Link-hotel */
+    .link-hotel{
+        background-color: rgb(0, 114, 189);
+        padding: 5px;
+    }
+    .link-hotel a{
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .link-hotel a:hover{
+        text-decoration: underline white;
+        color: white;
+    }
+    .link-hotel_all div{
+        float: left;
+    }
+    .link-hotel_all .use-interface{
+        margin-left: 76%;
+    }
+    .link-hotel_all .use-interface .use-interface_link{
+        border: 1px solid black;
+        background-color: rgb(248, 194, 24);
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    /* end link-hotel */
+    /*=== Header-icon ===*/
+    .header{
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+    /* Header-icon > sticky menu */
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 70px;
+        background-color: rgb(0, 72, 108);
+        transition: all 1s;
+        transition-duration: 1s;
+        transition-timing-function: 1s;
+        z-index: 11111;
+      }
+      .sticky + .star-icon i{
+          padding-top: 1000px;
+      }
+      /* Header-icon > end sticky menu */
+
+        /* Header-icon > header-icon */
+        .header .header-icon{
+            margin-top: 5%;
+        }
+        .header .header-icon a{
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .header .header-icon a:hover{
+            text-shadow: 0 0 10px white;
+        }
+            /* lớp được add */
+        .action{
+            display: none;
+        }
+        /* Header-icon > header-menu1 */
+        .header .navbar .navbar-nav li{
+            margin-right: 20px;
+        }
+        .header li a{
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+        }
+        .header li a:hover{
+            text-shadow: 0 0 10px white, 0 0 10px white, 0 0 10px white;
+        }
+        .dropdown-menu .dropdown-item{
+            color: black;
+        }
+            /* mobile menu */
+            .mobile-menu{
+               display: none;
+            }
+
+        /* Header-icon > header-logo */
+
+        .header .logo img{
+            max-width: 100%;
+            height: auto;
+            margin-top: 10%;
+        }
+            /* lớp được add */
+            .div-logo{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                border: 1px solid black;
+                margin-left: 25%;
+                background-color: rgb(0, 72, 108);
+                box-shadow: 0 0 5px #f3db81, 0 0 5px #f3db81;
+            }
+            .link-img{
+                width: auto;
+                height: auto;
+                margin-left: 0;
+            }
+        /* Header-icon > header-hotline */
+        .header .header-hotline{
+            margin-left: 60%;
+            margin-top: 5%;
+        }
+        .header .header-hotline .phone-number{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        .header .header-hotline a{
+            color: white;
+            text-decoration: none;
+        }
+
+        .header .header-hotline a img{
+            max-width: 100%;
+            height: auto;
+        }
+        .header .header-hotline a:hover{
+            text-decoration: underline;
+        }
+        .header nav{
+            margin-top: 3%;
+        }
+        /* end header-hotline */
+        /* Header-icon >  introduce*/
+        .header-menu .star-icon{
+            margin-top: 8%;
+            margin-bottom: 2%;
+            color: white;
+        }
+        .header-menu .header-hotelintro .intro-item{
+            color: white;
+            font-size: 48px;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 2%;
+        }
+        .header-menu .header-hotelintro a{
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color:white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+        }
+        .header-menu .header-hotelintro a:hover{
+            background-color: white;
+            color: black;
+        }
+        /* end introduce */
+        /* Header-icon > date */
+        .all-date{
+            margin-top: 8%;
+        }
+        .all-date p{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+            /* date come */
+            .all-date .date-come{
+                position: relative;
+            }
+            .all-date .date-come input{
+                position: absolute;
+                cursor: pointer;
+                background-color: transparent;
+                width: 90%;
+                height: 80px;
+                border: none;
+            }
+            .all-date .date-come .date-come__detail{
+                font-family: 'Playfair Display', serif;
+            }
+            .all-date .date-come .date-come__detail .day{
+                font-size: 84px;
+                line-height: .3;
+                color: white;
+    
+            }
+            .all-date .date-come .date-come__detail .month{
+                font-size: 21px;
+                color: white;
+    
+            }
+            .all-date .date-come .date-come__detail .year{
+                color: rgb(249, 194, 24);
+                display: block;
+            }
+            /* date back */
+            .all-date .date-back{
+                position: relative;
+            }
+            .all-date .date-back input{
+                position: absolute;
+                cursor: pointer;
+                background-color: transparent;
+                width: 90%;
+                height: 80px;
+                border: none;
+            }
+    
+            .all-date .date-back .date-back__detail{
+                font-family: 'Playfair Display', serif;
+            }
+            .all-date .date-back .date-back__detail .day{
+                font-size: 84px;
+                line-height: .3;
+                color: white;
+            }
+            .all-date .date-back .date-back__detail .month{
+                font-size: 21px;
+                color: white;
+    
+            }
+            .all-date .date-back .date-back__detail .year{
+                color: rgb(249, 194, 24);
+                display: block;
+            }
+            /* people apply */
+            .all-date .people-apply a{
+                font-family: 'Playfair Display', serif;
+                color: white;
+                font-size: 84px;
+                line-height: 0.3;
+                text-decoration: none;
+            }
+            /* button apply room */
+            .all-date .apply-buton{
+                margin-top: 5%;
+            }
+            .all-date .apply-buton a{
+                border: 2px solid white;
+                color: white;
+                text-decoration: none;
+                padding: 20px 100px;
+            }
+            .all-date .apply-buton a:hover{
+                color: black;
+                background-color: white;
+            }
+/* END HEADER */
+/* MAIN */
+.main{
+    margin-top: 7%;
+}
+    /* ROOM */
+        /* room content */
+    .main .room-hotel div{
+        float: left;
+    }
+    .main .room-intro .room-intro_title{
+        font-family: 'Playfair Display', serif;
+        font-size: 34px;
+        line-height: .5;
+    }
+    .main .room-intro .room-intro_title span{
+        color: rgb(249, 194, 24);
+    }
+    .main .room-intro .room-intro_intro{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+
+    .main .see-more {
+        margin-left: 62%;
+    }
+    .main .see-more a{
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        font-family: 'Montserrat', sans-serif;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+    }
+        /* room slide */
+    .room{
+        background-color: rgb(0, 72, 108);
+        margin-top: 12%;
+        padding-bottom: 50px;
+    }
+    .room .room-slide{
+        margin-top: -10%;
+    }
+    .room .item{
+        border: 1px solid black;
+        background-color: white;
+        height: 360px;
+    }
+    .room .room-slide .item .order-room{
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .room .room-slide .item .order-room p{
+        color: rgb(249, 194, 24);
+        font-family: 'Playfair Display', serif;
+        font-size: 28px;
+    }
+    .room .room-slide .item .order-room a{
+        color: white;
+        background-color: rgb(0, 72, 108);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .room .room-slide .item .order-room a:hover{
+        opacity: 0.5;
+    }
+
+    /* end room */
+    /* Feed back */
+    .main .feedback{
+        margin-top: 7%;
+    }
+    .feedback-intro_all div{
+        float: left;
+    }
+    .feedback-intro_all .feedback-intro .feedback-title{
+        font-family: 'Playfair Display', serif;
+        font-size: 34px;
+        line-height: .5;
+    }
+    .feedback-intro_all .feedback-intro .feedback-intro_intro{
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    /* link đặt phòng */
+    .feedback-intro_all .feedback-findmore{
+        margin-left: 59%;
+    }
+    .feedback-intro_all .feedback-findmore a{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        border: 1px solid black;
+        color: black;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+        /* rating slide*/
+
+        .feedback .all-rating{
+            background-color: rgb(0, 72, 108);
+            margin-top: 10%;
+            padding-bottom: 50px;
+        }
+        .all-rating .item{
+            border: 1px solid black;
+            box-shadow: 0 0 5px black;
+            background-color: white;
+            border-radius: 10px;
+            overflow: auto;
+            height: 320px;
+        }
+            .all-rating .rating{
+                margin-top: -10%;
+            }
+            .all-rating .rating .rating-img{
+                width: 27%;
+                margin-top: 5%;
+                margin-left: 4%;
+            }
+            .rating .item .user-name{
+                text-decoration: none;
+                color: black;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                margin-left: 4%;
+
+            }
+            .rating .item .user-name:hover{
+                text-decoration: underline rgb(0, 114, 189);
+            }
+            .rating .item .rating-feedback{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                margin-left: 4%;
+
+            }
+            /* chi tiết người rate */
+            .rating .item .rating-detail div{
+                float: left;
+            }
+            .rating .item .rating-detail a{
+                text-decoration: none;
+                color: rgb(207, 177, 109);
+            }
+            .rating .item .rating-detail a:hover{
+                text-decoration: underline orange;
+                color: orange;
+            }
+            .rating .item .rating-detail img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                margin-left: 100%;
+                margin-top: 10px;
+            }
+            .rating .item .rating-detail{
+                position: relative;
+            }
+            .rating .item .rating-detail .detail{
+                position: absolute;
+                top:100px;
+                left: 4%;
+            }
+            .rating .item .rating-detail .rating-date{
+                position: absolute;
+                top: 130px;
+                left: 70%;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                font-size: small;
+            }
+         /*logo feedback  */
+         .all-rating .logo-rating{
+             max-width: 100%;
+             height: auto;
+         }
+        .all-rating .logo-rating svg{
+            margin-top: -30%;
+            width: 100%;
+            height: 87px;
+        }
+    /* end feed back*/
+    /* END ROOM */
+    /*== RESTAURANT ==*/
+        /* restaurant content */
+        .restaurent{margin-top: 7%;}
+        .restaurent .res-intro div{
+            float: left;
+        }
+        .restaurent .res-intro .res-intro_title{
+            font-size: 34px;
+            font-family: 'Playfair Display', serif;
+            line-height: .5;
+        }
+        .restaurent .res-intro .res-intro_title span{
+            color: rgb(249, 194, 24);
+        }
+        .restaurent .res-intro .res-intro_content{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 14px;
+        }
+        /* link khám phá nhà hàng */
+        .restaurent .res-intro .res-findmore{
+            margin-left: 51%;
+        }
+        .restaurent .res-intro .res-findmore a{
+            border: 1px solid black;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 5px;
+        }
+        
+        /* danh sách nhà hàng */
+    .res-list{
+        margin-top: 2%;
+        margin-left: -2%;
+        position: relative;
+    }
+    .res-list .res-item{
+        float: left;
+        width: 23%;
+        height: 500px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        list-style: none;
+    }
+    .res-list .res-item{
+        transition: all 1s;
+        transition-duration: 1s;
+    }
+    .res-list .res-item a{
+        text-decoration: none;
+        color: white;
+    }
+    .res-list .res-item .item-background{
+        background-color: rgba(0, 72, 108, .8);
+        width: 100%;
+        height: 100%;
+    }
+    .res-list .res-item .item-background .res-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        padding-top: 65%;
+    }
+    .res-list .res-item .item-background .res-content{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        display: none;
+    }
+    .res-list .res-item.res-active{
+        width: 38%;
+
+      }
+    .res-list .res-item.res-inactive{
+        width: 13%;
+      }
+    .res-list .res-item.res-active .res-content{
+        display: block;
+    }
+
+    /* find-more */
+    .res-list .res-findmore_item a{
+        text-decoration: none;
+        color: white;
+    }
+    .res-list .res-findmore_item a i{
+        font-size: 30px;
+        /* margin-top: 50%; */
+        padding-top: 15%;
+        padding-left: 3%;
+    }
+    .res-list .res-findmore_item{
+        height: 500px;
+        width: 100%;
+        background-color: rgb(0, 38, 57);
+        list-style: none;
+    }
+
+    .res-list .res-findmore_item p{
+        font-family: 'Montserrat', sans-serif;
+        /* font-size: 24px; */
+        display: none;
+    }
+    .res-list .res-findmore_item.res-inactive p{
+        display: none;
+    }
+    /* END RESTAURANT */
+    /* GẦN ĐÂY */
+    /* Near content */
+    .all-visit{
+        margin-top: 7%;
+    }
+     .all-visit .vistit1{
+         margin-top: 3%;
+     }
+     .all-visit .vistit2{
+         margin-top: 2%;
+     }
+
+
+    .all-visit .near .near-title{
+        font-family: 'Playfair Display', serif;
+        font-size: 34px;
+        line-height: 1;
+    }
+    .all-visit .near .near-title span{
+        color: rgb(249, 194, 24);
+    }
+    .all-visit .near .near-content{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 0;
+    }
+    /* Near detail */
+    .all-visit .food{
+        width: 100%;
+        height: 360px;
+        position: relative;
+    }
+    .all-visit .food .food-background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .food .food-background:hover{
+        background-color: rgb(0, 38, 57, .8);
+    }
+    .all-visit .food .food-background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 40%;        
+    }
+    .all-visit .food .food-background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 45%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+
+    }
+    /* Point to */
+    .all-visit .point-to{
+        width: 100%;
+        height: 360px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .all-visit .point-to .point-to_background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .point-to .point-to_background:hover{
+        background-color: rgba(0, 38, 57, .8);
+    }
+    .all-visit .point-to .point-to_background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 45%;        
+    }
+    .all-visit .point-to .point-to_background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 40%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+
+    }
+    /* Game */
+    .all-visit .game{
+        width: 100%;
+        height: 360px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .all-visit .game .game-background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .game .game-background:hover{
+        background-color: rgba(0, 38, 57, .8);
+    }
+    .all-visit .game .game-background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 45%;        
+    }
+    .all-visit .game .game-background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 36%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+
+    }
+    /* Experiance */
+    .all-visit .experience{
+        width: 100%;
+        height: 360px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .all-visit .experience .experience-background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .experience .experience-background:hover{
+        background-color: rgba(0, 38, 57, .8);
+    }
+    .all-visit .experience .experience-background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 45%;        
+    }
+    .all-visit .experience .experience-background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 36%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+    }
+    /* Festival */
+    .all-visit .festival{
+        width: 100%;
+        height: 360px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+    }
+    .all-visit .festival .festival-background{
+        height: 100%;
+        width: 100%;
+    }
+    .all-visit .festival .festival-background:hover{
+        background-color: rgba(0, 38, 57, .8);
+        
+    }
+    .all-visit .festival .festival-background:hover a{
+        transition-timing-function: 0.5s;
+        transition-duration: 1s;
+        position: absolute;
+        top: 45%;        
+    }
+    .all-visit .festival .festival-background a{
+        color: white;
+        border: 1px solid white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        position: absolute;
+        left: 42%;
+        top: 80%;
+        transition: all .5;
+        transition-duration: 1s;
+    }
+    /* END GẦN ĐÂY */
+    /* FOOTER */
+    .footer{
+        margin-top: 10%;
+    }
+    .footer .all-detailfooter{
+        margin-top: -10%;
+    }
+    /* img footer */
+    .footer .img-footer{
+        max-width: 100%;
+        height: 400px;
+    }
+    /* map */
+    .footer iframe{
+        width: 104%;
+
+    }
+    /* detail footer */
+    .footer .detail{
+        background-color: rgb(238, 238, 238);
+        width: 100%;
+        height: 100%;        
+    }
+    .footer .detail .detail-content{
+        padding-left: 10%;
+        padding-top: 10%;
+    }
+    .footer .detail .detail-content .hotel-name{
+        font-family: 'Playfair Display', serif;
+        font-size: 35px;
+    }
+    .footer .detail .detail-content p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+
+    .footer .detail .icon-footer{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 0 50px 0 50px;
+        margin-top: 10%;
+    }
+    .footer .detail .icon-footer a i{
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer .detail .icon-footer a{
+        color: black;
+        text-decoration: none;
+        margin-right: 5%;
+        width: 100%;
+    }
+    .footer .detail .icon-footer a:hover{
+        opacity: 0.5;
+    }
+
+    /* footer end */
+    .footer-end{
+        background-color: rgb(0, 38, 57);
+        margin-top: 5%;
+        padding-bottom: 30px;
+    }
+    .footer-end a{
+        color: white;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+    .footer-end a:hover{
+        color: white;
+        text-decoration: underline white;
+    }
+    .footer-end span{
+        border-right: 1px solid white;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer-end .security{
+        margin-top: 15%;
+    }
+    .footer-end .pay{
+        margin-top: 15%;
+    }
+    .footer-end .footer-end__icon{
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .footer-end .footer-end__icon a{
+        margin-right: 5%;
+    }
+    .footer-end p{
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: small;
+        margin-left: 3%;
+    } 
